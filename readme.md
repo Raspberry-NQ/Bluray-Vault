@@ -234,43 +234,6 @@ The system uses a **multi-tier redundancy** approach:
 
 ---
 
-## Reference Papers
-
-### Papers in Repository (Chinese)
-
-| File | Topic | Key Contribution |
-|------|-------|-----------------|
-| `基于纠删码的光盘库数据纠错技术研究_张效群.pdf` | Erasure coding for optical disc libraries | RS-based erasure coding applied to optical disc library systems; disc-level fault tolerance |
-| `基于估错码的数据纠错机制研究_魏兴慎.pdf` | Error estimation coding for data correction | Analysis of error patterns in optical media; error prediction and adaptive redundancy |
-| `分布式存储系统中Reed-Solomon码快速解码算法研究_林泽冰.pdf` | Fast RS decoding for distributed storage | Optimized RS decoding algorithms; matrix operations and scheduling for erasure recovery |
-
-### Papers in Repository (English) — `papers/` directory
-
-| File | Authors/Year | Topic | Relevance |
-|------|-------------|-------|-----------|
-| `Plank1997_Tutorial_RS_Coding_RAID.pdf` | Plank, 1997 | Tutorial: RS coding for RAID-like fault tolerance | **Essential** — foundational reference for RS coding in storage systems |
-| `Plank2008_Jerasure_Library.pdf` | Plank et al., 2008 | Jerasure: C library for erasure coding | **Essential** — reference implementation architecture |
-| `Khan2012_Erasure_Coding_Survey.pdf` | Khan et al., 2012 | Survey of erasure coding for distributed storage | **High** — comprehensive overview of EC landscape |
-| `Gopalan2012_LRC_Locality.pdf` | Gopalan et al., 2012 | Locality in codeword symbols (LRC theory) | **High** — theoretical basis for locally repairable codes |
-| `Huang2012_LRC_WAS.pdf` | Huang et al., 2012 | LRC in Windows Azure Storage | **High** — practical LRC deployment in production storage |
-| `Sathiamoorthy2013_Product_Codes_PIRUMA.pdf` | Sathiamoorthy et al., 2013 | Product code matrices (PIRUMA) for cold storage | **High** — product codes optimized for archival/cold storage |
-| `Papailiopoulos2014_LRC_Bounds.pdf` | Papailiopoulos & Dimakis, 2014 | Bounds on locally repairable codes | **Medium** — optimal LRC parameter selection |
-| `Muralidhar2014_Facebook_Data_Warehouse.pdf` | Muralidhar et al., 2014 | XOR-based coding at Facebook warehouse scale | **Medium** — practical large-scale erasure coding |
-| `Alagappan2018_Erasure_Coding_Practical.pdf` | Alagappan, 2018 | Practical erasure coding considerations | **Medium** — engineering trade-offs in EC systems |
-| `Hao2019_LRC_Survey.pdf` | Hao et al., 2019 | Survey on locally repairable codes | **Medium** — comprehensive LRC survey |
-| `Surech2017_Erasure_Coding_Distributed_Survey.pdf` | Surech, 2017 | Erasure coding for distributed storage survey | **Medium** — distributed storage EC survey |
-| `RFC6330_RaptorQ_Specification.txt` | IETF RFC 6330, 2011 | RaptorQ fountain code specification | **Reference** — potential alternative coding scheme for future exploration |
-
-### Recommended Additional Papers (not yet in repository)
-
-- **Plank & Xu, 2006** — "Optimized Cauchy Reed-Solomon Codes for Erasure-Coded Storage" (IEEE Trans. Computing) — XOR-optimized CRS encoding
-- **Luby, 2002** — "LT Codes" (STOC) — Fountain codes for erasure channels
-- **Shokrollahi, 2006** — "Raptor Codes" (IEEE Trans. Information Theory) — Efficient fountain codes for broadcast/distribution
-- **Weatherspoon & Kubiatowicz, 2002** — "Erasure Coding vs. Replication: A Quantitative Comparison" — When EC beats replication
-- **PAR2 Specification** — Parchive parity volume spec — Practical file-level erasure coding format
-
----
-
 ## Key Design Decisions
 
 | Decision | Choice | Rationale |
