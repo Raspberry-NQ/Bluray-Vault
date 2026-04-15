@@ -1,0 +1,75 @@
+待下载论文列表
+=============
+
+以下论文需要手动下载，保存到 papers/ 目录
+
+---------------------------------------------
+1. Gopalan2012_LRC_Locality.pdf
+   标题: "On the Locality of Codeword Symbols"
+   作者: P. Gopalan, C. Huang, H. Simitci, S. Yekhanin
+   会议: ISIT 2012
+   下载地址:
+     - https://arxiv.org/abs/1104.2044 (arxiv页面，从页面点击PDF下载)
+     - 搜索: "On the Locality of Codeword Symbols Gopalan ISIT 2012 PDF"
+
+---------------------------------------------
+2. Huang2012_LRC_WAS.pdf
+   标题: "Erasure Coding in Windows Azure Storage"
+   作者: C. Huang, H. Simitci, Y. Xu, A. Ogus, B. Calder, P. Gopalan, J. Li, S. Yekhanin
+   会议: USENIX ATC 2012
+   下载地址:
+     - https://www.usenix.org/conference/atc12/erasure-coding-windows-azure-storage (官方会议页)
+     - https://www.usenix.org/system/files/conference/atc12/atc12-final74.pdf
+     - 搜索: "Erasure Coding in Windows Azure Storage USENIX 2012 PDF"
+
+---------------------------------------------
+3. Sathiamoorthy2013_Product_Codes_PIRUMA.pdf
+   标题: "XORing Elephants: Novel Erasure Codes for Big Data"
+   作者: M. Sathiamoorthy, M. Asteris, D. Papailiopoulos, A. G. Dimakis, R. Vadali, S. Chen, D. Borthakur
+   会议: VLDB 2013 / FAST 2013
+   下载地址:
+     - https://arxiv.org/abs/1203.0203 (arxiv页面，从页面点击PDF下载)
+     - 搜索: "XORing Elephants Novel Erasure Codes for Big Data PDF"
+
+---------------------------------------------
+4. Plank2006_Optimized_Cauchy_RS.pdf (新增推荐)
+   标题: "Optimized Cauchy Reed-Solomon Codes for Erasure-Coded Storage"
+   作者: J. S. Plank, L. Xu
+   期刊: IEEE Transactions on Computing, 2006
+   下载地址:
+     - DOI: 10.1109/TC.2006.121
+     - 搜索: "Optimized Cauchy Reed-Solomon Codes for Erasure-Coded Storage Plank 2006 PDF"
+
+---------------------------------------------
+5. Weatherspoon2002_Erasure_vs_Replication.pdf (新增推荐)
+   标题: "Erasure Coding vs. Replication: A Quantitative Comparison"
+   作者: H. Weatherspoon, J. D. Kubiatowicz
+   会议: IPTPS 2002
+   下载地址:
+     - https://www2.eecs.berkeley.edu/Pubs/TechRpts/2001/ERL-01-004.pdf
+     - 搜索: "Erasure Coding vs Replication Quantitative Comparison Weatherspoon PDF"
+
+---------------------------------------------
+6. Luby2002_LT_Codes.pdf (新增推荐)
+   标题: "LT Codes"
+   作者: M. Luby
+   会议: STOC 2002
+   下载地址:
+     - 搜索: "LT Codes Luby STOC 2002 PDF"
+     - ACM: https://dl.acm.org/doi/10.1145/509907.509916
+
+---------------------------------------------
+7. Shokrollahi2006_Raptor_Codes.pdf (新增推荐)
+   标题: "Raptor Codes"
+   作者: A. Shokrollahi
+   期刊: IEEE Transactions on Information Theory, 2006
+   下载地址:
+     - DOI: 10.1109/TIT.2006.874390
+     - 搜索: "Raptor Codes Shokrollahi 2006 IEEE PDF"
+
+---------------------------------------------
+8. PAR2_Specification (新增推荐)
+   标题: "Parchive PAR2 Specification"
+   下载地址:
+     - https://github.com/Parchive/par2cmdline (源码仓库)
+     - https://parchive.github.io/docs/specifications/parity-volume-spec/article-spec.html
