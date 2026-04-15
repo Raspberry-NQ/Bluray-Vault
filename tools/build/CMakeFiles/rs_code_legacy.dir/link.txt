@@ -1,0 +1,2 @@
+/usr/bin/ar qc librs_code_legacy.a CMakeFiles/rs_code_legacy.dir/init_field.c.o CMakeFiles/rs_code_legacy.dir/get_msg.c.o CMakeFiles/rs_code_legacy.dir/encode.c.o CMakeFiles/rs_code_legacy.dir/lose_packets.c.o CMakeFiles/rs_code_legacy.dir/decode.c.o CMakeFiles/rs_code_legacy.dir/compare_msg.c.o
+/usr/bin/ranlib librs_code_legacy.a

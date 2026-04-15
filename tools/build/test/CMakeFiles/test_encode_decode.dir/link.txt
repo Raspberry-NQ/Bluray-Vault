@@ -1,0 +1,1 @@
+/usr/bin/cc  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/test_encode_decode.dir/test_encode_decode.c.o -o test_encode_decode  ../librs_code.a

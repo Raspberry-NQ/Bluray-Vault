@@ -1,0 +1,1 @@
+/usr/bin/cc  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/test_edge_cases.dir/test_edge_cases.c.o -o test_edge_cases  ../librs_code.a
