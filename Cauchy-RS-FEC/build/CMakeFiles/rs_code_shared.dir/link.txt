@@ -1,0 +1,1 @@
+/usr/bin/cc  -arch arm64 -dynamiclib -Wl,-headerpad_max_install_names -o librs_code.dylib -install_name @rpath/librs_code.dylib CMakeFiles/rs_code_shared.dir/rs_code.c.o

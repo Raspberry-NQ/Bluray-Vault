@@ -1,0 +1,20 @@
+{
+  "volume_id": "2b821c8d0dee",
+  "name": "testv",
+  "created_at": "2026-04-16T13:36:11.140872",
+  "status": "staging",
+  "erasure": {
+    "redundancy": "standard",
+    "data_stripes": 16,
+    "parity_stripes": 4,
+    "chunk_size": 1048576,
+    "gf_degree": 8
+  },
+  "encryption": {
+    "algorithm": "AES-256-GCM",
+    "kdf": "Argon2id",
+    "key_length": 256
+  },
+  "total_discs": 0,
+  "discs": []
+}

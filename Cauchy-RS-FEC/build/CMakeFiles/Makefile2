@@ -54,16 +54,17 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/raspberry/developProject/Bluray-Vault/tools
+CMAKE_SOURCE_DIR = /Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/raspberry/developProject/Bluray-Vault/tools/build
+CMAKE_BINARY_DIR = /Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
 all: CMakeFiles/rs_code.dir/all
+all: CMakeFiles/rs_code_shared.dir/all
 all: CMakeFiles/rs_code_legacy.dir/all
 all: CMakeFiles/driver.dir/all
 all: CMakeFiles/driver_lib.dir/all
@@ -72,6 +73,7 @@ all: test/all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/rs_code.dir/codegen
+codegen: CMakeFiles/rs_code_shared.dir/codegen
 codegen: CMakeFiles/rs_code_legacy.dir/codegen
 codegen: CMakeFiles/driver.dir/codegen
 codegen: CMakeFiles/driver_lib.dir/codegen
@@ -84,6 +86,7 @@ preinstall: test/preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/rs_code.dir/clean
+clean: CMakeFiles/rs_code_shared.dir/clean
 clean: CMakeFiles/rs_code_legacy.dir/clean
 clean: CMakeFiles/driver.dir/clean
 clean: CMakeFiles/driver_lib.dir/clean
@@ -122,14 +125,14 @@ test/clean: test/CMakeFiles/test_edge_cases.dir/clean
 CMakeFiles/rs_code.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_code.dir/build.make CMakeFiles/rs_code.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_code.dir/build.make CMakeFiles/rs_code.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/raspberry/developProject/Bluray-Vault/tools/build/CMakeFiles --progress-num=5,6 "Built target rs_code"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build/CMakeFiles --progress-num=5,6 "Built target rs_code"
 .PHONY : CMakeFiles/rs_code.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rs_code.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/raspberry/developProject/Bluray-Vault/tools/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rs_code.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/raspberry/developProject/Bluray-Vault/tools/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build/CMakeFiles 0
 .PHONY : CMakeFiles/rs_code.dir/rule
 
 # Convenience name for target.
@@ -139,7 +142,7 @@ rs_code: CMakeFiles/rs_code.dir/rule
 # codegen rule for target.
 CMakeFiles/rs_code.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_code.dir/build.make CMakeFiles/rs_code.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/raspberry/developProject/Bluray-Vault/tools/build/CMakeFiles --progress-num=5,6 "Finished codegen for target rs_code"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build/CMakeFiles --progress-num=5,6 "Finished codegen for target rs_code"
 .PHONY : CMakeFiles/rs_code.dir/codegen
 
 # clean rule for target.
@@ -148,20 +151,52 @@ CMakeFiles/rs_code.dir/clean:
 .PHONY : CMakeFiles/rs_code.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/rs_code_shared.dir
+
+# All Build rule for target.
+CMakeFiles/rs_code_shared.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_code_shared.dir/build.make CMakeFiles/rs_code_shared.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_code_shared.dir/build.make CMakeFiles/rs_code_shared.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build/CMakeFiles --progress-num=14,15 "Built target rs_code_shared"
+.PHONY : CMakeFiles/rs_code_shared.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/rs_code_shared.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rs_code_shared.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build/CMakeFiles 0
+.PHONY : CMakeFiles/rs_code_shared.dir/rule
+
+# Convenience name for target.
+rs_code_shared: CMakeFiles/rs_code_shared.dir/rule
+.PHONY : rs_code_shared
+
+# codegen rule for target.
+CMakeFiles/rs_code_shared.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_code_shared.dir/build.make CMakeFiles/rs_code_shared.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build/CMakeFiles --progress-num=14,15 "Finished codegen for target rs_code_shared"
+.PHONY : CMakeFiles/rs_code_shared.dir/codegen
+
+# clean rule for target.
+CMakeFiles/rs_code_shared.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_code_shared.dir/build.make CMakeFiles/rs_code_shared.dir/clean
+.PHONY : CMakeFiles/rs_code_shared.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/rs_code_legacy.dir
 
 # All Build rule for target.
 CMakeFiles/rs_code_legacy.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_code_legacy.dir/build.make CMakeFiles/rs_code_legacy.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_code_legacy.dir/build.make CMakeFiles/rs_code_legacy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/raspberry/developProject/Bluray-Vault/tools/build/CMakeFiles --progress-num=7,8,9,10,11,12,13 "Built target rs_code_legacy"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build/CMakeFiles --progress-num=7,8,9,10,11,12,13 "Built target rs_code_legacy"
 .PHONY : CMakeFiles/rs_code_legacy.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rs_code_legacy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/raspberry/developProject/Bluray-Vault/tools/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rs_code_legacy.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/raspberry/developProject/Bluray-Vault/tools/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build/CMakeFiles 0
 .PHONY : CMakeFiles/rs_code_legacy.dir/rule
 
 # Convenience name for target.
@@ -171,7 +206,7 @@ rs_code_legacy: CMakeFiles/rs_code_legacy.dir/rule
 # codegen rule for target.
 CMakeFiles/rs_code_legacy.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_code_legacy.dir/build.make CMakeFiles/rs_code_legacy.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/raspberry/developProject/Bluray-Vault/tools/build/CMakeFiles --progress-num=7,8,9,10,11,12,13 "Finished codegen for target rs_code_legacy"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build/CMakeFiles --progress-num=7,8,9,10,11,12,13 "Finished codegen for target rs_code_legacy"
 .PHONY : CMakeFiles/rs_code_legacy.dir/codegen
 
 # clean rule for target.
@@ -186,14 +221,14 @@ CMakeFiles/rs_code_legacy.dir/clean:
 CMakeFiles/driver.dir/all: CMakeFiles/rs_code_legacy.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/driver.dir/build.make CMakeFiles/driver.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/driver.dir/build.make CMakeFiles/driver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/raspberry/developProject/Bluray-Vault/tools/build/CMakeFiles --progress-num=1,2 "Built target driver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build/CMakeFiles --progress-num=1,2 "Built target driver"
 .PHONY : CMakeFiles/driver.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/driver.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/raspberry/developProject/Bluray-Vault/tools/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/driver.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/raspberry/developProject/Bluray-Vault/tools/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build/CMakeFiles 0
 .PHONY : CMakeFiles/driver.dir/rule
 
 # Convenience name for target.
@@ -203,7 +238,7 @@ driver: CMakeFiles/driver.dir/rule
 # codegen rule for target.
 CMakeFiles/driver.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/driver.dir/build.make CMakeFiles/driver.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/raspberry/developProject/Bluray-Vault/tools/build/CMakeFiles --progress-num=1,2 "Finished codegen for target driver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build/CMakeFiles --progress-num=1,2 "Finished codegen for target driver"
 .PHONY : CMakeFiles/driver.dir/codegen
 
 # clean rule for target.
@@ -218,14 +253,14 @@ CMakeFiles/driver.dir/clean:
 CMakeFiles/driver_lib.dir/all: CMakeFiles/rs_code.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/driver_lib.dir/build.make CMakeFiles/driver_lib.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/driver_lib.dir/build.make CMakeFiles/driver_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/raspberry/developProject/Bluray-Vault/tools/build/CMakeFiles --progress-num=3,4 "Built target driver_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build/CMakeFiles --progress-num=3,4 "Built target driver_lib"
 .PHONY : CMakeFiles/driver_lib.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/driver_lib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/raspberry/developProject/Bluray-Vault/tools/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/driver_lib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/raspberry/developProject/Bluray-Vault/tools/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build/CMakeFiles 0
 .PHONY : CMakeFiles/driver_lib.dir/rule
 
 # Convenience name for target.
@@ -235,7 +270,7 @@ driver_lib: CMakeFiles/driver_lib.dir/rule
 # codegen rule for target.
 CMakeFiles/driver_lib.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/driver_lib.dir/build.make CMakeFiles/driver_lib.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/raspberry/developProject/Bluray-Vault/tools/build/CMakeFiles --progress-num=3,4 "Finished codegen for target driver_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build/CMakeFiles --progress-num=3,4 "Finished codegen for target driver_lib"
 .PHONY : CMakeFiles/driver_lib.dir/codegen
 
 # clean rule for target.
@@ -250,14 +285,14 @@ CMakeFiles/driver_lib.dir/clean:
 test/CMakeFiles/test_gf_field.dir/all: CMakeFiles/rs_code.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_gf_field.dir/build.make test/CMakeFiles/test_gf_field.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_gf_field.dir/build.make test/CMakeFiles/test_gf_field.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/raspberry/developProject/Bluray-Vault/tools/build/CMakeFiles --progress-num=18,19 "Built target test_gf_field"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build/CMakeFiles --progress-num=20,21 "Built target test_gf_field"
 .PHONY : test/CMakeFiles/test_gf_field.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/test_gf_field.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/raspberry/developProject/Bluray-Vault/tools/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_gf_field.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/raspberry/developProject/Bluray-Vault/tools/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/test_gf_field.dir/rule
 
 # Convenience name for target.
@@ -267,7 +302,7 @@ test_gf_field: test/CMakeFiles/test_gf_field.dir/rule
 # codegen rule for target.
 test/CMakeFiles/test_gf_field.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_gf_field.dir/build.make test/CMakeFiles/test_gf_field.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/raspberry/developProject/Bluray-Vault/tools/build/CMakeFiles --progress-num=18,19 "Finished codegen for target test_gf_field"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build/CMakeFiles --progress-num=20,21 "Finished codegen for target test_gf_field"
 .PHONY : test/CMakeFiles/test_gf_field.dir/codegen
 
 # clean rule for target.
@@ -282,14 +317,14 @@ test/CMakeFiles/test_gf_field.dir/clean:
 test/CMakeFiles/test_encode_decode.dir/all: CMakeFiles/rs_code.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_encode_decode.dir/build.make test/CMakeFiles/test_encode_decode.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_encode_decode.dir/build.make test/CMakeFiles/test_encode_decode.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/raspberry/developProject/Bluray-Vault/tools/build/CMakeFiles --progress-num=16,17 "Built target test_encode_decode"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build/CMakeFiles --progress-num=18,19 "Built target test_encode_decode"
 .PHONY : test/CMakeFiles/test_encode_decode.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/test_encode_decode.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/raspberry/developProject/Bluray-Vault/tools/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_encode_decode.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/raspberry/developProject/Bluray-Vault/tools/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/test_encode_decode.dir/rule
 
 # Convenience name for target.
@@ -299,7 +334,7 @@ test_encode_decode: test/CMakeFiles/test_encode_decode.dir/rule
 # codegen rule for target.
 test/CMakeFiles/test_encode_decode.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_encode_decode.dir/build.make test/CMakeFiles/test_encode_decode.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/raspberry/developProject/Bluray-Vault/tools/build/CMakeFiles --progress-num=16,17 "Finished codegen for target test_encode_decode"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build/CMakeFiles --progress-num=18,19 "Finished codegen for target test_encode_decode"
 .PHONY : test/CMakeFiles/test_encode_decode.dir/codegen
 
 # clean rule for target.
@@ -314,14 +349,14 @@ test/CMakeFiles/test_encode_decode.dir/clean:
 test/CMakeFiles/test_edge_cases.dir/all: CMakeFiles/rs_code.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_edge_cases.dir/build.make test/CMakeFiles/test_edge_cases.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_edge_cases.dir/build.make test/CMakeFiles/test_edge_cases.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/raspberry/developProject/Bluray-Vault/tools/build/CMakeFiles --progress-num=14,15 "Built target test_edge_cases"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build/CMakeFiles --progress-num=16,17 "Built target test_edge_cases"
 .PHONY : test/CMakeFiles/test_edge_cases.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/test_edge_cases.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/raspberry/developProject/Bluray-Vault/tools/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_edge_cases.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/raspberry/developProject/Bluray-Vault/tools/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/test_edge_cases.dir/rule
 
 # Convenience name for target.
@@ -331,7 +366,7 @@ test_edge_cases: test/CMakeFiles/test_edge_cases.dir/rule
 # codegen rule for target.
 test/CMakeFiles/test_edge_cases.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_edge_cases.dir/build.make test/CMakeFiles/test_edge_cases.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/raspberry/developProject/Bluray-Vault/tools/build/CMakeFiles --progress-num=14,15 "Finished codegen for target test_edge_cases"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build/CMakeFiles --progress-num=16,17 "Finished codegen for target test_edge_cases"
 .PHONY : test/CMakeFiles/test_edge_cases.dir/codegen
 
 # clean rule for target.

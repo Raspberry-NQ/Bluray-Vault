@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/raspberry/developProject/Bluray-Vault/tools
+CMAKE_SOURCE_DIR = /Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/raspberry/developProject/Bluray-Vault/tools/build
+CMAKE_BINARY_DIR = /Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -97,9 +97,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/raspberry/developProject/Bluray-Vault/tools/build/CMakeFiles /Users/raspberry/developProject/Bluray-Vault/tools/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build/CMakeFiles /Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/raspberry/developProject/Bluray-Vault/tools/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -138,6 +138,19 @@ rs_code: cmake_check_build_system
 rs_code/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_code.dir/build.make CMakeFiles/rs_code.dir/build
 .PHONY : rs_code/fast
+
+#=============================================================================
+# Target rules for targets named rs_code_shared
+
+# Build rule for target.
+rs_code_shared: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rs_code_shared
+.PHONY : rs_code_shared
+
+# fast build rule for target.
+rs_code_shared/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_code_shared.dir/build.make CMakeFiles/rs_code_shared.dir/build
+.PHONY : rs_code_shared/fast
 
 #=============================================================================
 # Target rules for targets named rs_code_legacy
@@ -415,6 +428,7 @@ rs_code.o: rs_code.c.o
 # target to build an object file
 rs_code.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_code.dir/build.make CMakeFiles/rs_code.dir/rs_code.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_code_shared.dir/build.make CMakeFiles/rs_code_shared.dir/rs_code.c.o
 .PHONY : rs_code.c.o
 
 rs_code.i: rs_code.c.i
@@ -423,6 +437,7 @@ rs_code.i: rs_code.c.i
 # target to preprocess a source file
 rs_code.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_code.dir/build.make CMakeFiles/rs_code.dir/rs_code.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_code_shared.dir/build.make CMakeFiles/rs_code_shared.dir/rs_code.c.i
 .PHONY : rs_code.c.i
 
 rs_code.s: rs_code.c.s
@@ -431,6 +446,7 @@ rs_code.s: rs_code.c.s
 # target to generate assembly for a file
 rs_code.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_code.dir/build.make CMakeFiles/rs_code.dir/rs_code.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_code_shared.dir/build.make CMakeFiles/rs_code_shared.dir/rs_code.c.s
 .PHONY : rs_code.c.s
 
 # Help Target
@@ -446,6 +462,7 @@ help:
 	@echo "... driver_lib"
 	@echo "... rs_code"
 	@echo "... rs_code_legacy"
+	@echo "... rs_code_shared"
 	@echo "... test_edge_cases"
 	@echo "... test_encode_decode"
 	@echo "... test_gf_field"

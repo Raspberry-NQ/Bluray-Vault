@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/raspberry/developProject/Bluray-Vault/tools
+CMAKE_SOURCE_DIR = /Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/raspberry/developProject/Bluray-Vault/tools/build
+CMAKE_BINARY_DIR = /Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/rs_code.dir/depend.make
@@ -73,18 +73,18 @@ CMakeFiles/rs_code.dir/codegen:
 .PHONY : CMakeFiles/rs_code.dir/codegen
 
 CMakeFiles/rs_code.dir/rs_code.c.o: CMakeFiles/rs_code.dir/flags.make
-CMakeFiles/rs_code.dir/rs_code.c.o: /Users/raspberry/developProject/Bluray-Vault/tools/rs_code.c
+CMakeFiles/rs_code.dir/rs_code.c.o: /Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/rs_code.c
 CMakeFiles/rs_code.dir/rs_code.c.o: CMakeFiles/rs_code.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/raspberry/developProject/Bluray-Vault/tools/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/rs_code.dir/rs_code.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rs_code.dir/rs_code.c.o -MF CMakeFiles/rs_code.dir/rs_code.c.o.d -o CMakeFiles/rs_code.dir/rs_code.c.o -c /Users/raspberry/developProject/Bluray-Vault/tools/rs_code.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/rs_code.dir/rs_code.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rs_code.dir/rs_code.c.o -MF CMakeFiles/rs_code.dir/rs_code.c.o.d -o CMakeFiles/rs_code.dir/rs_code.c.o -c /Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/rs_code.c
 
 CMakeFiles/rs_code.dir/rs_code.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rs_code.dir/rs_code.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/raspberry/developProject/Bluray-Vault/tools/rs_code.c > CMakeFiles/rs_code.dir/rs_code.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/rs_code.c > CMakeFiles/rs_code.dir/rs_code.c.i
 
 CMakeFiles/rs_code.dir/rs_code.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rs_code.dir/rs_code.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/raspberry/developProject/Bluray-Vault/tools/rs_code.c -o CMakeFiles/rs_code.dir/rs_code.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/rs_code.c -o CMakeFiles/rs_code.dir/rs_code.c.s
 
 # Object files for target rs_code
 rs_code_OBJECTS = \
@@ -96,7 +96,7 @@ rs_code_EXTERNAL_OBJECTS =
 librs_code.a: CMakeFiles/rs_code.dir/rs_code.c.o
 librs_code.a: CMakeFiles/rs_code.dir/build.make
 librs_code.a: CMakeFiles/rs_code.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/raspberry/developProject/Bluray-Vault/tools/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library librs_code.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library librs_code.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/rs_code.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rs_code.dir/link.txt --verbose=$(VERBOSE)
 
@@ -109,6 +109,6 @@ CMakeFiles/rs_code.dir/clean:
 .PHONY : CMakeFiles/rs_code.dir/clean
 
 CMakeFiles/rs_code.dir/depend:
-	cd /Users/raspberry/developProject/Bluray-Vault/tools/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/raspberry/developProject/Bluray-Vault/tools /Users/raspberry/developProject/Bluray-Vault/tools /Users/raspberry/developProject/Bluray-Vault/tools/build /Users/raspberry/developProject/Bluray-Vault/tools/build /Users/raspberry/developProject/Bluray-Vault/tools/build/CMakeFiles/rs_code.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC /Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC /Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build /Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build /Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build/CMakeFiles/rs_code.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/rs_code.dir/depend
 

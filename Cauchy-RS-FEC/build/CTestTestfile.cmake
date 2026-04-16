@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /Users/raspberry/developProject/Bluray-Vault/tools
-# Build directory: /Users/raspberry/developProject/Bluray-Vault/tools/build
+# Source directory: /Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC
+# Build directory: /Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

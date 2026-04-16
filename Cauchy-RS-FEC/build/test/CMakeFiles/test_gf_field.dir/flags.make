@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/raspberry/developProject/Bluray-Vault/tools
+C_INCLUDES = -I/Users/raspberry/developProject/Bluray-Vault/Cauchy-RS-FEC
 
 C_FLAGSarm64 = -std=gnu11 -arch arm64
 

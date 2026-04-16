@@ -17,6 +17,18 @@ target_include_directories(rs_code PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
+# Shared library for Python ctypes binding
+add_library(rs_code_shared SHARED
+    rs_code.c
+)
+set_target_properties(rs_code_shared PROPERTIES
+    OUTPUT_NAME "rs_code"
+    POSITION_INDEPENDENT_CODE ON
+)
+target_include_directories(rs_code_shared PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}
+)
+
 # ---- Original source compatibility ----
 # Build the original driver from the legacy source files
 add_library(rs_code_legacy STATIC
