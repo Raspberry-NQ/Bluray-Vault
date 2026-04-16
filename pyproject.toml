@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bluray-vault"
+version = "0.1.0"
+description = "Blu-ray archival backup system with extreme data recoverability"
+requires-python = ">=3.10"
+dependencies = [
+    "rich>=13.0",
+    "click>=8.0",
+    "pycryptodome>=3.19",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "ruff>=0.1"]
+
+[project.scripts]
+bbackup = "src.cli.main:main"
+
+[tool.setuptools.packages.find]
+include = ["src*"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100

@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: bluray-vault
+Version: 0.1.0
+Summary: Blu-ray archival backup system with extreme data recoverability
+Requires-Python: >=3.10
+Requires-Dist: rich>=13.0
+Requires-Dist: click>=8.0
+Requires-Dist: pycryptodome>=3.19
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0; extra == "dev"
+Requires-Dist: ruff>=0.1; extra == "dev"

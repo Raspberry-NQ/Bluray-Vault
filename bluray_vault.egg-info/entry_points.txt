@@ -1,0 +1,2 @@
+[console_scripts]
+bbackup = src.cli.main:main
